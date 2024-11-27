@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@font-face {
+  font-family: "ChristmasFont";
+  src: url("/fonts/christmasFont.otf") format("opentype");
+  font-weight: normal; /* Adjust if needed: normal, bold, etc. */
+  font-style: normal; /* Adjust if needed: normal, italic, etc. */
+}
+@font-face {
+  font-family: "PlayFul";
+  src: url("/fonts/playful.otf") format("opentype");
+  font-weight: normal; /* Adjust if needed: normal, bold, etc. */
+  font-style: normal; /* Adjust if needed: normal, italic, etc. */
+}
+.christmas-font {
+  font-family: "ChristmasFont", sans-serif;
+}
+.play {
+  font-family: "PlayFul", sans-serif;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  @apply rounded-2xl w-full text-[#2f6e6c] my-2 h-8 px-4;
+}
+button[type="submit"] {
+  @apply bg-[#b22734] p-2 px-4 rounded-full text-white font-bold;
+}
