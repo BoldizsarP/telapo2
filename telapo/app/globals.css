@@ -26,6 +26,13 @@
   font-weight: normal; /* Adjust if needed: normal, bold, etc. */
   font-style: normal; /* Adjust if needed: normal, italic, etc. */
 }
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+.lexend-text {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 .christmas-font {
   font-family: "ChristmasFont", sans-serif;
 }
@@ -36,7 +43,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lexend", sans-serif;
 }
 
 input {
@@ -44,4 +51,8 @@ input {
 }
 button[type="submit"] {
   @apply bg-[#b22734] p-2 px-4 rounded-full text-white font-bold;
+}
+
+.a-button {
+  @apply p-2 rounded-lg bg-slate-100;
 }

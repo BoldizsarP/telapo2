@@ -3,6 +3,7 @@ import prismaClient from "@/app/utils/connect";
 import CredentialsProvider from "next-auth/providers/credentials";
 import NextAuth from "next-auth";
 import { compare } from "bcrypt";
+import { User } from "@prisma/client";
 
 declare module "next-auth" {
   interface User {
@@ -47,10 +48,13 @@ export const { auth, handlers, signIn, signOut } = NextAuth({
           });
           if (
             !user ||
-            (await compare(credentials.password as any, user.passhash))
+            (await compare(credentials.password as any, user.passhash)) ===
+              false
           ) {
+            return null;
           }
           if (user) {
+            console.log(user);
             return {
               valid_email: user.email,
               draws: user.draws ?? undefined,
@@ -60,9 +64,8 @@ export const { auth, handlers, signIn, signOut } = NextAuth({
             };
           }
         }
-
         // Return null if user data could not be retrieved
-        return null;
+        throw null;
       },
     }),
   ],
@@ -72,14 +75,15 @@ export const { auth, handlers, signIn, signOut } = NextAuth({
   callbacks: {
     async jwt(props) {
       const { token, user } = props;
-      console.log("JWT", token.user);
+      if (user) token.user = user;
+      console.log("JWT", props);
 
       return { user: token.user };
     },
-    async session(props) {
-      props.session.user = props.token.user as any;
-      console.log(props);
-      return props.session;
+    async session({ session, token }) {
+      session.user = token.user as any;
+
+      return session;
     },
   },
 });

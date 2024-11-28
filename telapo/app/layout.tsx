@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { NavBar } from "@/components/navbar/navbar";
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -27,10 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable}  antialiased bg-[url('/backgrounds/LandingBackgroundSquare.webp')] bg-no-repeat bg-cover h-screen bg-top`}
+        className={`${geistSans.variable} ${geistMono.variable}  antialiased bg-[url('/backgrounds/LandingBackgroundSquare.webp')] bg-no-repeat bg-cover h-screen bg-[center_top]`}
       >
         <NavBar />
         <div className=" h-[90%]">{children}</div>
+        <ToastContainer position="top-center" />
       </body>
     </html>
   );

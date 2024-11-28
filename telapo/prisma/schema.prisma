@@ -9,21 +9,21 @@ generator client {
 }
 
 model User {
-    id          String    @id @default(uuid()) @db.Uuid
-    email       String    @unique
+    id          String         @id @default(uuid()) @db.Uuid
+    email       String         @unique
     firstName   String
     lastName    String
     familyGroup String
     passhash    String
-    drawsId     String?   @unique @db.Uuid
-    draws       User?     @relation("UserDraws", fields: [drawsId], references: [id])
-    drawnBy     User[]    @relation("UserDraws")
-    PWReset     PWReset[]
+    drawsId     String?        @unique @db.Uuid
+    draws       User?          @relation("UserDraws", fields: [drawsId], references: [id])
+    drawnBy     User[]         @relation("UserDraws")
+    PWReset     PWResetToken[]
 }
 
-model PWReset {
+model PWResetToken {
     id     String @id @default(uuid()) @db.Uuid
-    secret String
+    secret String @unique
     target User   @relation(fields: [userId], references: [id])
     userId String @db.Uuid
 }
