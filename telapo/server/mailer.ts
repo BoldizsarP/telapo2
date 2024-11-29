@@ -1,6 +1,6 @@
 import { drewTemplate } from "@/mail_templates/dt";
 import { PW_RESET_TEMPLATE } from "@/mail_templates/psr";
-import { lookup } from "node:dns";
+import { resolve4 } from "node:dns";
 import nodemailer, { Transporter } from "nodemailer";
 export const sendPasswordResetEmail = async ({
   email,
@@ -49,9 +49,9 @@ export const sendDrawEmail = async ({
 
 const getIp = async () => {
   return new Promise<string>((resolve, reject) => {
-    lookup("smtp.gmail.com", (err, address, family) => {
+    resolve4("smtp.gmail.com", (err, address) => {
       if (err) reject(err);
-      resolve(address);
+      resolve(address[0]);
       console.log(address);
     });
   });
