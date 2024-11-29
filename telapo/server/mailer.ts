@@ -62,7 +62,7 @@ export const getMailer = async () =>
     service: "gmail",
     host: await getIp(),
     port: 587,
-    secure: false,
+    secure: true,
     auth: {
       user: process.env.EMAIL,
       pass: process.env.EMAIL_PW, // the app password Not your gmail password
