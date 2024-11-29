@@ -6,7 +6,6 @@ import prisma from "@/app/utils/connect";
 export const getCurrentUser = async () => {
   const user = await getSessionUser();
   if (!user || !user.valid_email) throw Error();
-  console.log(user);
   return await prisma.user.findFirstOrThrow({
     where: { email: user.valid_email },
     select: {

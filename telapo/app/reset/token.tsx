@@ -1,4 +1,4 @@
-import { useActionState, useEffect, useState } from "react";
+import { ChangeEvent, useActionState, useEffect, useState } from "react";
 import { resetPassword } from "./token_server";
 import { redirect } from "next/navigation";
 import "./reset.css";
@@ -9,8 +9,9 @@ export const PasswordReset = ({ token }: { token: string }) => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const handlePasswordChange = (e: any) => setPassword(e.target.value);
-  const handleConfirmPasswordChange = (e: any) =>
+  const handlePasswordChange = (e: ChangeEvent<HTMLInputElement>) =>
+    setPassword(e.target.value);
+  const handleConfirmPasswordChange = (e: ChangeEvent<HTMLInputElement>) =>
     setConfirmPassword(e.target.value);
   const toggleShowPassword = () => setShowPassword(!showPassword);
   const readyAction = resetPassword.bind(null, token);

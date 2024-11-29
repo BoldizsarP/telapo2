@@ -3,7 +3,7 @@ import prismaClient from "@/app/utils/connect";
 import CredentialsProvider from "next-auth/providers/credentials";
 import NextAuth from "next-auth";
 import { compare } from "bcrypt";
-import { User } from "@prisma/client";
+import { AdapterUser } from "next-auth/adapters";
 
 declare module "next-auth" {
   interface User {
@@ -27,7 +27,7 @@ export const { auth, handlers, signIn, signOut } = NextAuth({
         email: { label: "Email", type: "email", placeholder: "some@email.com" },
         password: { label: "Password", type: "password" },
       },
-      async authorize(credentials, req) {
+      async authorize(credentials) {
         // You need to provide your own logic here that takes the credentials
         // submitted and returns either a object representing a user or value
         // that is false/null if the credentials are invalid.
@@ -48,13 +48,13 @@ export const { auth, handlers, signIn, signOut } = NextAuth({
           });
           if (
             !user ||
-            (await compare(credentials.password as any, user.passhash)) ===
+            (await compare(credentials.password as string, user.passhash)) ===
               false
           ) {
             return null;
           }
           if (user) {
-            console.log(user);
+            // console.log(user);
             return {
               valid_email: user.email,
               draws: user.draws ?? undefined,
@@ -76,14 +76,15 @@ export const { auth, handlers, signIn, signOut } = NextAuth({
     async jwt(props) {
       const { token, user } = props;
       if (user) token.user = user;
-      console.log("JWT", props);
+      // console.log("JWT", props);
 
       return { user: token.user };
     },
     async session({ session, token }) {
-      session.user = token.user as any;
+      session.user = token.user as AdapterUser;
 
       return session;
     },
   },
+  trustHost: process.env.TRUSTED_HOST ? true : false,
 });

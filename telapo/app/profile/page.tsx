@@ -6,7 +6,7 @@ export default async function Page() {
   let user: Awaited<ReturnType<typeof getCurrentUser>>;
   try {
     user = await getCurrentUser();
-  } catch (error) {
+  } catch {
     return redirect("/");
   }
   return (

@@ -1,5 +1,4 @@
 "use server";
-import { auth } from "@/app/api/auth/[...nextauth]/auth";
 import prisma from "@/app/utils/connect";
 import { getSessionUser } from "@/server/userData";
 import { revalidatePath } from "next/cache";

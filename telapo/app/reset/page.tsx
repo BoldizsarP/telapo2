@@ -2,8 +2,9 @@
 import { useSearchParams } from "next/navigation";
 import { PasswordReset } from "./token";
 import PasswordResetRequest from "./requestReset";
-import { useEffect, useState } from "react";
-export default function Page() {
+import { ReactElement, Suspense } from "react";
+
+function Reset(): ReactElement {
   const searchParams = useSearchParams();
   const token = searchParams.get("token");
   return (
@@ -16,5 +17,14 @@ export default function Page() {
         />
       )}
     </div>
+  );
+}
+export default async function Page(): Promise<ReactElement> {
+  return (
+    <>
+      <Suspense>
+        <Reset />
+      </Suspense>
+    </>
   );
 }

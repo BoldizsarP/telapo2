@@ -18,12 +18,10 @@ async function main() {
       });
     })
   );
-  console.log(MAPPINGS);
   for (const entry of Object.entries(logic)) {
     if (entry[0] == "fills") return;
     const whoMail = MAPPINGS[entry[0]];
     const whomMail = MAPPINGS[entry[1] as string];
-    console.log(entry, whoMail, whomMail);
     const whomId = (
       await prisma.user.findFirstOrThrow({ where: { email: whomMail } })
     ).id;

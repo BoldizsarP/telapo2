@@ -6,7 +6,7 @@ import { redirect } from "next/navigation";
 import { Spinner } from "@/components/widget/spinner";
 
 const PasswordResetRequest = ({ baseUrl }: { baseUrl: string }) => {
-  const [message, setMessage] = useState("");
+  const [message] = useState("");
   const readyAction = requestReset.bind(null, baseUrl);
   const [state, formAction, loading] = useActionState(readyAction, null);
   useEffect(() => {
