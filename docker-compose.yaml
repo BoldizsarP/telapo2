@@ -10,15 +10,14 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
-  nextjs-app:
+  telapo:
     build:
       context: ./telapo
       dockerfile: Dockerfile
     ports:
       - "13000:3000"
-    volumes:
-      - ./telapo:/app
-      - /app/node_modules
+    env_file:
+      - ./telapo/.prod.env
     environment:
       NEXT_PUBLIC_API_URL: http://localhost:5432
     depends_on:
