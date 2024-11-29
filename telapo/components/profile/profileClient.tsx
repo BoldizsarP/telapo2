@@ -49,13 +49,7 @@ export const ProfileForm = (
         defaultValue={profile.lastName}
       />
       <h1 className="play font-bold text-3xl">You are part of</h1>
-      <input
-        type="fam"
-        name=""
-        id=""
-        disabled
-        value={profile.familyGroup + " Family"}
-      />
+      <input type="fam" name="" id="" disabled value={profile.familyGroup} />
       <div className="w-full flex justify-center">
         <button type="submit">Save Changes</button>
       </div>
