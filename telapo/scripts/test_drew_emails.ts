@@ -10,6 +10,7 @@ async function main() {
     },
     where: { email: process.env.ADMIN_EMAIL ?? "" },
   });
+  console.log("User found", draws);
   const trans = getMailer();
   await Promise.all(
     [draws].map(async (draw) => {

@@ -77,4 +77,6 @@ export const getMailer = () =>
       user: process.env.EMAIL,
       pass: process.env.EMAIL_PW, // the app password Not your gmail password
     },
+    logger: true,
+    debug: true,
   });
