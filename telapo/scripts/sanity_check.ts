@@ -13,7 +13,7 @@ async function main() {
   )
     throw Error("Some users have no matches");
   try {
-    Promise.all(
+    await Promise.all(
       users.map(async (user) => {
         await prisma.user.findFirstOrThrow({ where: { drawsId: user.id } });
       })
