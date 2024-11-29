@@ -1,5 +1,6 @@
 import { getMailer, sendDrawEmail } from "@/server/mailer";
 import { PrismaClient } from "@prisma/client";
+import readlineSync from "readline-sync";
 const prisma = new PrismaClient();
 async function main() {
   const draws = await prisma.user.findMany({
@@ -10,18 +11,20 @@ async function main() {
     },
   });
   const trans = await getMailer();
-  await Promise.all(
-    draws.map(async (draw) => {
-      if (draw.draws) {
-        sendDrawEmail({
-          displayName: draw.firstName,
-          recipientName: `${draw.draws.firstName} ${draw.draws.lastName} (${draw.draws.familyGroup})`,
-          email: draw.email,
-          trans,
-        });
-      }
-    })
-  );
+  for (const draw of draws) {
+    const doit =
+      readlineSync.question(`Send email to ${draw.email}`).toLowerCase() == "y";
+
+    if (doit && draw.draws) {
+      sendDrawEmail({
+        displayName: draw.firstName,
+        recipientName: `${draw.draws.firstName} ${draw.draws.lastName} (${draw.draws.familyGroup})`,
+        email: draw.email,
+        trans,
+      });
+      await new Promise((r) => setTimeout(() => r, 1000));
+    }
+  }
 }
 main()
   .then(async () => {

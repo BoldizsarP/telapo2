@@ -883,6 +883,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/readline-sync@npm:^1":
+  version: 1.4.8
+  resolution: "@types/readline-sync@npm:1.4.8"
+  checksum: 10c0/08da90bbc4905f42eea2f7e03253f86b8060e93dbd427cc2ef5ebc0955248088c85e1638dd480ce28e2e576624979a81e12d1371d2c38e1796002ca8efbc719f
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/eslint-plugin@npm:^5.4.2 || ^6.0.0 || ^7.0.0 || ^8.0.0":
   version: 8.16.0
   resolution: "@typescript-eslint/eslint-plugin@npm:8.16.0"
@@ -4184,6 +4191,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"readline-sync@npm:^1.4.10":
+  version: 1.4.10
+  resolution: "readline-sync@npm:1.4.10"
+  checksum: 10c0/0a4d0fe4ad501f8f005a3c9cbf3cc0ae6ca2ced93e9a1c7c46f226bdfcb6ef5d3f437ae7e9d2e1098ee13524a3739c830e4c8dbc7f543a693eecd293e41093a3
+  languageName: node
+  linkType: hard
+
 "reflect.getprototypeof@npm:^1.0.4, reflect.getprototypeof@npm:^1.0.6":
   version: 1.0.7
   resolution: "reflect.getprototypeof@npm:1.0.7"
@@ -4837,6 +4851,7 @@ __metadata:
     "@types/nodemailer": "npm:^6.4.17"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
+    "@types/readline-sync": "npm:^1"
     bcrypt: "npm:^5.1.1"
     cross-env: "npm:^7.0.3"
     dotenv: "npm:^16.4.5"
@@ -4851,6 +4866,7 @@ __metadata:
     react: "npm:19.0.0-rc-66855b96-20241106"
     react-dom: "npm:19.0.0-rc-66855b96-20241106"
     react-toastify: "npm:^10.0.6"
+    readline-sync: "npm:^1.4.10"
     tailwindcss: "npm:^3.4.1"
     ts-node: "npm:^10.9.2"
     tsx: "npm:^4.19.2"
