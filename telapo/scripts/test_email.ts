@@ -1,8 +1,9 @@
 import { sendPasswordResetEmail } from "@/server/mailer";
 async function main() {
+  const basePath = process.env.NEXTAUTH_URL ?? "random.link";
   sendPasswordResetEmail({
     email: "boldizsarpal@invenshure.com",
-    link: "randomlink.com",
+    link: basePath,
     displayName: "Your Balls",
   });
 }
