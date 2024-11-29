@@ -1,6 +1,6 @@
 import { drewTemplate } from "@/mail_templates/dt";
 import { PW_RESET_TEMPLATE } from "@/mail_templates/psr";
-import { User } from "@prisma/client";
+import { lookup } from "node:dns";
 import nodemailer, { Transporter } from "nodemailer";
 export const sendPasswordResetEmail = async ({
   email,
@@ -11,16 +11,7 @@ export const sendPasswordResetEmail = async ({
   displayName: string;
   link: string;
 }) => {
-  const transporter = nodemailer.createTransport({
-    service: "gmail",
-    host: "smtp.gmail.com",
-    port: 587,
-    secure: false,
-    auth: {
-      user: process.env.EMAIL,
-      pass: process.env.EMAIL_PW, // the app password Not your gmail password
-    },
-  });
+  const transporter = await getMailer();
 
   const info = await transporter.sendMail({
     from: process.env.EMAIL,
@@ -44,18 +35,7 @@ export const sendDrawEmail = async ({
   email: string;
   trans?: Transporter;
 }) => {
-  const transporter =
-    trans ??
-    nodemailer.createTransport({
-      service: "gmail",
-      host: "smtp.gmail.com",
-      port: 587,
-      secure: false,
-      auth: {
-        user: process.env.EMAIL,
-        pass: process.env.EMAIL_PW, // the app password Not your gmail password
-      },
-    });
+  const transporter = trans ?? (await getMailer());
   await transporter.sendMail({
     from: process.env.EMAIL,
     to: email,
@@ -67,16 +47,25 @@ export const sendDrawEmail = async ({
   });
 };
 
-export const getMailer = () =>
+const getIp = async () => {
+  return new Promise<string>((resolve, reject) => {
+    lookup("smtp.gmail.com", (err, address, family) => {
+      if (err) reject(err);
+      resolve(address);
+    });
+  });
+};
+
+export const getMailer = async () =>
   nodemailer.createTransport({
     service: "gmail",
-    host: "smtp.gmail.com",
+    host: await getIp(),
     port: 587,
     secure: false,
     auth: {
       user: process.env.EMAIL,
       pass: process.env.EMAIL_PW, // the app password Not your gmail password
     },
-    logger: true,
-    debug: true,
+    logger: process.env.EMAIL_DEBUG?.toLowerCase() === "true",
+    debug: process.env.EMAIL_DEBUG?.toLowerCase() === "true",
   });

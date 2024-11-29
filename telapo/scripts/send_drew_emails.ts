@@ -9,7 +9,7 @@ async function main() {
       draws: { select: { firstName: true, lastName: true, familyGroup: true } },
     },
   });
-  const trans = getMailer();
+  const trans = await getMailer();
   await Promise.all(
     draws.map(async (draw) => {
       if (draw.draws) {
