@@ -16,7 +16,7 @@ async function main() {
     console.log(doit);
     const trans = await getMailer();
     if (doit.toLowerCase() === "y" && draw.draws) {
-      sendDrawEmail({
+      await sendDrawEmail({
         displayName: draw.firstName,
         recipientName: `${draw.draws.firstName} ${draw.draws.lastName} (${draw.draws.familyGroup})`,
         email: draw.email,
