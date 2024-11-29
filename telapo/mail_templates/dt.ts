@@ -115,7 +115,7 @@ export const drewTemplate = ({
       <div class="footer">
         <p>
           <strong>Connect with us:</strong>
-          <a href="santa.pinthat.io">Website</a> |
+          <a href="telapo.pinthat.io">Website</a> |
         </p>
         <p>
           <em
