@@ -26,7 +26,7 @@ async function main() {
           lastName: element["lname"],
           firstName: element["fname"],
           passhash: await bcrypt.hash(
-            truePass ? "UnsetPassword" : randomUUID(),
+            truePass ? randomUUID() : "UnsetPassword",
             salt
           ),
         },

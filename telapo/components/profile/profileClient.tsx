@@ -1,12 +1,11 @@
 import { User } from "@prisma/client";
 import { UpdateProfile } from "./profileServer";
-import Image from "next/image";
 export const ProfileEdit = (
   profile: Pick<User, "email" | "familyGroup" | "firstName" | "lastName">
 ) => {
   return (
     <div className="relative rounded-xl  w-full md:w-[500px] h-full md:h-[550px]">
-      <Image
+      <img
         className="w-full h-full absolute rounded-xl"
         src="/backgrounds/edited_profile_template.png"
         alt=""

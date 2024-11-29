@@ -1,6 +1,5 @@
 import { getCurrentUser } from "@/server/userData";
 import { redirect } from "next/navigation";
-import Image from "next/image";
 export default async function Page() {
   let user: Awaited<ReturnType<typeof getCurrentUser>>;
   try {
@@ -12,7 +11,7 @@ export default async function Page() {
   return (
     <div className="w-full h-full flex justify-center items-center">
       <div className="md:w-[500px] md:h-[500px] w-full aspect-square relative">
-        <Image
+        <img
           src="/backgrounds/secret.png"
           alt=""
           className="w-full h-full absolute"
