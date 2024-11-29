@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "prisma": {
-    "seed": "ts-node --compiler-options {\\\"module\\\":\\\"CommonJS\\\"} prisma/seed.ts"
+    "seed": "cross-env DOTENV_CONFIG_PATH=../.env tsx -r dotenv/config prisma/seed.ts"
   },
   "scripts": {
     "dev": "next dev",

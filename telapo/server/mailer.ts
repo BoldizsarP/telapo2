@@ -1,5 +1,7 @@
+import { drewTemplate } from "@/mail_templates/dt";
 import { PW_RESET_TEMPLATE } from "@/mail_templates/psr";
-import nodemailer from "nodemailer";
+import { User } from "@prisma/client";
+import nodemailer, { Transporter } from "nodemailer";
 export const sendPasswordResetEmail = async ({
   email,
   link,
@@ -9,7 +11,6 @@ export const sendPasswordResetEmail = async ({
   displayName: string;
   link: string;
 }) => {
-  console.log(process.env.DATABASE_URL);
   const transporter = nodemailer.createTransport({
     service: "gmail",
     host: "smtp.gmail.com",
@@ -30,5 +31,50 @@ export const sendPasswordResetEmail = async ({
       link,
     html: PW_RESET_TEMPLATE({ displayName, link }),
   });
-  console.log(info);
 };
+
+export const sendDrawEmail = async ({
+  displayName,
+  recipientName,
+  email,
+  trans,
+}: {
+  displayName: string;
+  recipientName: string;
+  email: string;
+  trans?: Transporter;
+}) => {
+  const transporter =
+    trans ??
+    nodemailer.createTransport({
+      service: "gmail",
+      host: "smtp.gmail.com",
+      port: 587,
+      secure: false,
+      auth: {
+        user: process.env.EMAIL,
+        pass: process.env.EMAIL_PW, // the app password Not your gmail password
+      },
+    });
+  await transporter.sendMail({
+    from: process.env.EMAIL,
+    to: email,
+    subject: "A letter from the north pole | Secret Santa",
+    text:
+      "We were trying to reach out you about your car's extended warranty: You drew " +
+      recipientName,
+    html: drewTemplate({ displayName, recipientName }),
+  });
+};
+
+export const getMailer = () =>
+  nodemailer.createTransport({
+    service: "gmail",
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false,
+    auth: {
+      user: process.env.EMAIL,
+      pass: process.env.EMAIL_PW, // the app password Not your gmail password
+    },
+  });
