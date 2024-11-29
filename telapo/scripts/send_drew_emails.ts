@@ -10,11 +10,12 @@ async function main() {
       draws: { select: { firstName: true, lastName: true, familyGroup: true } },
     },
   });
-  const trans = await getMailer();
+  await prisma.$disconnect();
   for (const draw of draws) {
     const doit =
       readlineSync.question(`Send email to ${draw.email}`).toLowerCase() == "y";
 
+    const trans = await getMailer();
     if (doit && draw.draws) {
       sendDrawEmail({
         displayName: draw.firstName,
@@ -22,14 +23,11 @@ async function main() {
         email: draw.email,
         trans,
       });
-      await new Promise((r) => setTimeout(() => r, 1000));
     }
   }
 }
 main()
-  .then(async () => {
-    await prisma.$disconnect();
-  })
+  .then(async () => {})
   .catch(async (e) => {
     console.error(e);
     await prisma.$disconnect();
