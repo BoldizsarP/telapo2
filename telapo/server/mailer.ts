@@ -60,11 +60,8 @@ const getIp = async () => {
 export const getMailer = async () =>
   nodemailer.createTransport({
     host: "smtp.gmail.com",
-    port: 465,
-    secure: true,
-    tls: {
-      rejectUnauthorized: false,
-    },
+    port: 587,
+    secure: false,
     auth: {
       user: process.env.EMAIL,
       pass: process.env.EMAIL_PW, // the app password Not your gmail password
