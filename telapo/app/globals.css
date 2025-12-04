@@ -47,7 +47,7 @@ body {
 }
 
 input {
-  @apply rounded-2xl w-full text-[#2f6e6c] my-2 h-8 px-4;
+  @apply rounded-xl w-full text-[#2f6e6c] my-2 h-8 px-4;
 }
 button[type="submit"] {
   @apply bg-[#b22734] p-2 px-4 rounded-full text-white font-bold;
