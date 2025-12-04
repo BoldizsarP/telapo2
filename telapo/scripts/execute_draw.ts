@@ -1,7 +1,6 @@
-import { PrismaClient } from "@prisma/client";
+import prisma from "../app/utils/connect";
 import logic from "./draw_logic_seed.json";
 import _ from "lodash";
-const prisma = new PrismaClient();
 const MAPPINGS: { [key: string]: string } = {};
 async function main() {
   await prisma.user.updateMany({ data: { drawsId: null } });

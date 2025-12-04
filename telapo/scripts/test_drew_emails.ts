@@ -1,6 +1,5 @@
 import { getMailer, sendDrawEmail } from "@/server/mailer";
-import { PrismaClient } from "@prisma/client";
-const prisma = new PrismaClient();
+import prisma from "../app/utils/connect";
 async function main() {
   const draws = await prisma.user.findFirstOrThrow({
     select: {

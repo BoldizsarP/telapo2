@@ -1,6 +1,5 @@
 import { sendPasswordResetEmail } from "@/server/mailer";
-import { PrismaClient } from "@prisma/client";
-const prisma = new PrismaClient();
+import prisma from "../app/utils/connect";
 async function main() {
   const basePath = process.env.NEXTAUTH_URL;
   if (!basePath || basePath.length == 0) throw Error("You gotta have this");

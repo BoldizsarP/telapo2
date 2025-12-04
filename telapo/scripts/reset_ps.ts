@@ -1,6 +1,5 @@
-import { PrismaClient } from "@prisma/client";
+import prisma from "../app/utils/connect";
 import { genSalt, hash } from "bcrypt";
-const prisma = new PrismaClient();
 async function main() {
   const users = await prisma.user.findMany();
 
@@ -10,7 +9,7 @@ async function main() {
         if (user.email === process.env.ADMIN_EMAIL) return;
         await prisma.user.update({
           where: { id: user.id },
-          data: { passhash: await hash("UnsetPassword", await genSalt(10)) },
+          data: { passhash: await hash("123", await genSalt(10)) },
         });
       })
     );

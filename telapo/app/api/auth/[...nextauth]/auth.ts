@@ -35,6 +35,7 @@ export const { auth, handlers, signIn, signOut } = NextAuth({
         // You can also use the `req` object to obtain additional parameters
         // (i.e., the request IP address)
         if (credentials.email && credentials.password) {
+          console.log(credentials.email, credentials.password);
           const user = await prismaClient.user.findFirst({
             where: { email: credentials.email },
             select: {
@@ -51,6 +52,11 @@ export const { auth, handlers, signIn, signOut } = NextAuth({
             (await compare(credentials.password as string, user.passhash)) ===
               false
           ) {
+            console.log(
+              "Invalid credentials",
+              user,
+              await compare(credentials.password as string, user!.passhash)
+            );
             return null;
           }
           if (user) {
