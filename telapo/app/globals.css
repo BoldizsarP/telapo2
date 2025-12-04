@@ -47,12 +47,23 @@ body {
 }
 
 input {
-  @apply rounded-xl w-full text-[#2f6e6c] my-2 h-8 px-4;
+  border-radius: 0.5rem;
+  color: #2f6e6c;
+  width: 100%;
+  margin: 0.5rem 0;
+  height: 2rem;
+  padding: 0.5rem;
 }
 button[type="submit"] {
-  @apply bg-[#b22734] p-2 px-4 rounded-full text-white font-bold;
+  background-color: #b22734;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  color: white;
+  font-weight: bold;
 }
 
 .a-button {
-  @apply p-2 rounded-lg bg-slate-100;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #f0f0f0;
 }
