@@ -15,6 +15,7 @@
   "dependencies": {
     "@prisma/adapter-pg": "^7.1.0",
     "@prisma/client": "^7.1.0",
+    "@tailwindcss/postcss": "^4.1.17",
     "bcrypt": "^6.0.0",
     "cross-env": "^10.1.0",
     "dotenv": "^17.2.3",
@@ -31,6 +32,7 @@
     "tsx": "^4.21.0"
   },
   "devDependencies": {
+    "@inquirer/prompts": "^8.0.2",
     "@types/bcrypt": "^6.0.0",
     "@types/lodash": "^4.17.21",
     "@types/node": "^22.10.0",
@@ -38,6 +40,7 @@
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@types/readline-sync": "^1",
+    "commander": "^14.0.2",
     "eslint": "^9.39.1",
     "eslint-config-next": "^16.0.7",
     "postcss": "^8.5.6",

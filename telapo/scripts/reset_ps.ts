@@ -1,4 +1,4 @@
-import prisma from "../app/utils/connect";
+import prisma from "../utils/connect";
 import { genSalt, hash } from "bcrypt";
 async function main() {
   const users = await prisma.user.findMany();

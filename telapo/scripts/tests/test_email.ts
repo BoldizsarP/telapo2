@@ -1,5 +1,5 @@
 import { sendPasswordResetEmail } from "@/server/mailer";
-import prisma from "../app/utils/connect";
+import prisma from "../../utils/connect";
 async function main() {
   const basePath = process.env.NEXTAUTH_URL ?? "random.link";
   sendPasswordResetEmail({

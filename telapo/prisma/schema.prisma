@@ -9,16 +9,29 @@ generator client {
 }
 
 model User {
-    id          String         @id @default(uuid()) @db.Uuid
-    email       String         @unique
-    firstName   String
-    lastName    String
-    familyGroup String
-    passhash    String
-    drawsId     String?        @unique @db.Uuid
-    draws       User?          @relation("UserDraws", fields: [drawsId], references: [id])
-    drawnBy     User[]         @relation("UserDraws")
-    PWReset     PWResetToken[]
+    id             String         @id @default(uuid()) @db.Uuid
+    email          String         @unique
+    firstName      String
+    lastName       String
+    familyGroup    String
+    passhash       String
+    drawsId        String?        @unique @db.Uuid
+    draws          User?          @relation("UserDraws", fields: [drawsId], references: [id])
+    drawnBy        User[]         @relation("UserDraws")
+    PWReset        PWResetToken[]
+    latestDrew     LatestDrew?    @relation("LatestDrew")
+    latestDrawn    LatestDrew?    @relation("LatestDrawn")
+    drawnByHistory DrawHistory[]  @relation("DrawnByHistory")
+    drewHistory    DrawHistory[]  @relation("DrewHistory")
+    isActive       Boolean        @default(true)
+    familyGroupObj FamilyGroup?   @relation(fields: [familyGroupId], references: [id])
+    familyGroupId  String?        @db.Uuid
+}
+
+model FamilyGroup {
+    id          String @id @default(uuid()) @db.Uuid
+    displayName String @unique
+    users       User[]
 }
 
 model PWResetToken {
@@ -26,4 +39,37 @@ model PWResetToken {
     secret String @unique
     target User   @relation(fields: [userId], references: [id])
     userId String @db.Uuid
+}
+
+model LatestDrew {
+    whoDrew       User   @relation("LatestDrew", fields: [whoDrewId], references: [id])
+    whoDrewId     String @unique @db.Uuid
+    whoWasDraw    User   @relation("LatestDrawn", fields: [whoWasDrawnId], references: [id])
+    whoWasDrawnId String @unique @db.Uuid
+
+    @@unique([whoDrewId, whoWasDrawnId])
+}
+
+model DrawHistory {
+    whoDrew       User   @relation("DrewHistory", fields: [whoDrewId], references: [id])
+    whoDrewId     String @db.Uuid
+    whoWasDrawn   User   @relation("DrawnByHistory", fields: [whoWasDrawnId], references: [id])
+    whoWasDrawnId String @db.Uuid
+    drewYear      Int    @default(2025)
+
+    @@unique([whoDrewId, whoWasDrawnId, drewYear])
+}
+
+model DrawSeed {
+    id        String   @id @default(uuid()) @db.Uuid
+    seed      Json
+    createdAt DateTime @default(now())
+}
+
+model CustomMigration {
+    id            String   @id @default(uuid()) @db.Uuid
+    migrationName String   @unique
+    success       Boolean  @default(true)
+    errorMessage  String?
+    createdAt     DateTime @default(now())
 }

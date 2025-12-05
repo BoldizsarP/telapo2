@@ -1,32 +1,32 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer utilities {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #171717;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #0a0a0a;
+      --foreground: #ededed;
+    }
+  }
+
+  @font-face {
+    font-family: "ChristmasFont";
+    src: url("/fonts/christmasFont.otf") format("opentype");
+    font-weight: normal; /* Adjust if needed: normal, bold, etc. */
+    font-style: normal; /* Adjust if needed: normal, italic, etc. */
+  }
+  @font-face {
+    font-family: "PlayFul";
+    src: url("/fonts/playful.otf") format("opentype");
+    font-weight: normal; /* Adjust if needed: normal, bold, etc. */
+    font-style: normal; /* Adjust if needed: normal, italic, etc. */
   }
 }
-
-@font-face {
-  font-family: "ChristmasFont";
-  src: url("/fonts/christmasFont.otf") format("opentype");
-  font-weight: normal; /* Adjust if needed: normal, bold, etc. */
-  font-style: normal; /* Adjust if needed: normal, italic, etc. */
-}
-@font-face {
-  font-family: "PlayFul";
-  src: url("/fonts/playful.otf") format("opentype");
-  font-weight: normal; /* Adjust if needed: normal, bold, etc. */
-  font-style: normal; /* Adjust if needed: normal, italic, etc. */
-}
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 .lexend-text {
   font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
@@ -42,7 +42,6 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
   font-family: "Lexend", sans-serif;
 }
 

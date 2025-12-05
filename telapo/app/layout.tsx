@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable}  antialiased bg-[url('/backgrounds/LandingBackgroundSquare.webp')] bg-no-repeat bg-cover h-screen bg-[center_top]`}
+        className={`${geistSans.variable} ${geistMono.variable}  antialiased bg-[url('/backgrounds/LandingBackgroundSquare.webp')] bg-no-repeat bg-cover h-screen bg-position-[center_top]`}
       >
         <NavBar />
         <div className=" h-[90%]">{children}</div>

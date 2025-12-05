@@ -1,4 +1,4 @@
-import prismaClient from "@/app/utils/connect";
+import prismaClient from "@/utils/connect";
 
 import CredentialsProvider from "next-auth/providers/credentials";
 import NextAuth from "next-auth";

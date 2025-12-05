@@ -1,5 +1,5 @@
 "use server";
-import prisma from "@/app/utils/connect";
+import prisma from "@/utils/connect";
 import { getSessionUser } from "@/server/userData";
 import { revalidatePath } from "next/cache";
 

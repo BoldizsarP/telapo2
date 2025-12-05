@@ -1,5 +1,5 @@
 import { compare, genSalt, hash } from "bcrypt";
-import prisma from "../app/utils/connect";
+import prisma from "../../utils/connect";
 async function main() {
   //   await prisma.user.update({
   //     where: { email: "boldizsarpal@invenshure.com" },

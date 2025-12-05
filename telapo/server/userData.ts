@@ -1,7 +1,7 @@
 "use server";
 
 import { auth } from "@/app/api/auth/[...nextauth]/auth";
-import prisma from "@/app/utils/connect";
+import prisma from "@/utils/connect";
 
 export const getCurrentUser = async () => {
   const user = await getSessionUser();

@@ -1,6 +1,6 @@
 "use server";
 
-import prisma from "@/app/utils/connect";
+import prisma from "@/utils/connect";
 import { sendPasswordResetEmail } from "@/server/mailer";
 import { genSalt, hash } from "bcrypt";
 
