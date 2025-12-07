@@ -18,7 +18,7 @@ export const WishlistEditor = ({ initialData }: { initialData: any }) => {
 
   return (
     <>
-      <div className="max-w-4xl m-20 p-5 bg-white rounded-xl flex flex-col text-black">
+      <div className="max-w-full lg:max-w-4xl md:m-20 p-5 bg-white rounded-xl flex flex-col text-black">
         <div className="flex justify-between items-center">
           <h1 className="text-2xl font-bold">My Secret Santa Wishlist</h1>
           <button

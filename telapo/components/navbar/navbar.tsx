@@ -1,6 +1,7 @@
 import { auth } from "@/app/api/auth/[...nextauth]/auth";
 import Link from "next/link";
 
+import { MenuButton } from "./component/MenuButton";
 export const NavBar = async () => {
   const session = await auth();
   const loggedIn = session?.user ?? undefined;
@@ -12,7 +13,7 @@ export const NavBar = async () => {
       <Link className="christmas-font  text-3xl md:hidden" href={"/"}>
         Santa
       </Link>
-      <div className="flex space-x-2 md:space-x-8  text-2xl">
+      <div className=" space-x-2 md:space-x-8  text-2xl hidden md:flex">
         {loggedIn ? (
           <>
             <Link className="a-button" href={"/profile/wishlist"}>
@@ -39,6 +40,7 @@ export const NavBar = async () => {
           </>
         )}
       </div>
+      <MenuButton loggedIn={!!loggedIn} />
     </div>
   );
 };
