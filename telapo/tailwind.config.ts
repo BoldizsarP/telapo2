@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
-
+import typography from "@tailwindcss/typography";
+import colors from "tailwindcss/colors";
 export default {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,7 +9,15 @@ export default {
   ],
   theme: {
     extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: "100ch", // add required value here
+          },
+        },
+      },
       colors: {
+        ...colors,
         background: "var(--background)",
         foreground: "var(--foreground)",
         "festive-red": "#e82f30",
@@ -16,5 +25,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [typography()],
 } satisfies Config;

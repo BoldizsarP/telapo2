@@ -1,4 +1,4 @@
-import { User } from "@prisma/client";
+import { User } from "@/generated/prisma/client";
 import { UpdateProfile } from "./profileServer";
 export const ProfileEdit = (
   profile: Pick<User, "email" | "familyGroup" | "firstName" | "lastName">

@@ -793,12 +793,202 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@codexteam/icons@npm:^0.0.4":
+  version: 0.0.4
+  resolution: "@codexteam/icons@npm:0.0.4"
+  checksum: 10c0/8509a2f8f8d889ce1016bfc7ed0452a931bb75838e267c2118aec594497d472de65c90cdee203fd2d99b1bc8367f760f093ba4d83cb2e5b5c787f00186627acb
+  languageName: node
+  linkType: hard
+
+"@codexteam/icons@npm:^0.0.5":
+  version: 0.0.5
+  resolution: "@codexteam/icons@npm:0.0.5"
+  checksum: 10c0/5f73f137a65a17959d758a80a3b3846801475a9555791a13561b4a2fcb57664bb7a667b6c27ea1da6f9d462b5b0657b2c35164928ad6c0a10b7e4737ddd79104
+  languageName: node
+  linkType: hard
+
+"@codexteam/icons@npm:^0.0.6":
+  version: 0.0.6
+  resolution: "@codexteam/icons@npm:0.0.6"
+  checksum: 10c0/b29d2f4b931f763999354781199ab60ada31bc1b8c419df916d4e5857a68c73e5b8615a1c5b72434367e23f95c75e62c1053090f6b34d52d66add9d686a950cb
+  languageName: node
+  linkType: hard
+
+"@codexteam/icons@npm:^0.3.0, @codexteam/icons@npm:^0.3.2":
+  version: 0.3.3
+  resolution: "@codexteam/icons@npm:0.3.3"
+  checksum: 10c0/336245f38a2b2a53626a552a5f0f32c822ee1265be6827670ba157c9fa101cb23e6c75e625aa067e4577c2d805e261f4ffcb61097ea94c034c0a3c0cae7d7271
+  languageName: node
+  linkType: hard
+
 "@cspotcode/source-map-support@npm:^0.8.0":
   version: 0.8.1
   resolution: "@cspotcode/source-map-support@npm:0.8.1"
   dependencies:
     "@jridgewell/trace-mapping": "npm:0.3.9"
   checksum: 10c0/05c5368c13b662ee4c122c7bfbe5dc0b613416672a829f3e78bc49a357a197e0218d6e74e7c66cfcd04e15a179acab080bd3c69658c9fbefd0e1ccd950a07fc6
+  languageName: node
+  linkType: hard
+
+"@editorjs/caret@npm:^1.0.1":
+  version: 1.0.3
+  resolution: "@editorjs/caret@npm:1.0.3"
+  dependencies:
+    "@editorjs/dom": "npm:^1.0.1"
+  checksum: 10c0/7bd9848a64b85769efba00ec57b074ff7125b902cab71e3b9114b36afd16d2a17dd041a7c2c98b1195c3dd70d63cd58dad249e5cec175cce81a4df85a1f1b9b0
+  languageName: node
+  linkType: hard
+
+"@editorjs/checklist@npm:^1.6.0":
+  version: 1.6.0
+  resolution: "@editorjs/checklist@npm:1.6.0"
+  dependencies:
+    "@codexteam/icons": "npm:^0.3.0"
+  checksum: 10c0/85de46cf3ad1cacf4d67ca75d4d3129dd5719ec297ac44fa852272bb5d5513b46a9d8ecafa6b3a8b77989519a8dd5eb2bdc48ebae8846fea5dede448df8a7844
+  languageName: node
+  linkType: hard
+
+"@editorjs/code@npm:^2.9.3":
+  version: 2.9.3
+  resolution: "@editorjs/code@npm:2.9.3"
+  dependencies:
+    "@codexteam/icons": "npm:^0.3.2"
+  checksum: 10c0/e467a857cb48aeccaa6fccf3efb949f59549d0d9d031b64c7f7439b1f693299316188a27f30446cf2ce782fe4e2b4f55796677dfff150b823c89e3aebe0c7b7a
+  languageName: node
+  linkType: hard
+
+"@editorjs/delimiter@npm:^1.4.2":
+  version: 1.4.2
+  resolution: "@editorjs/delimiter@npm:1.4.2"
+  dependencies:
+    "@codexteam/icons": "npm:^0.3.2"
+  checksum: 10c0/635e96097529484e3db69b565de6dd153c5b4564906f1e4ad5883c3f97236badbc2b964a512a7456f0f3819eac0809e061f4a5a0e27b49054b28b2e8e13b1d7c
+  languageName: node
+  linkType: hard
+
+"@editorjs/dom@npm:^0.0.5":
+  version: 0.0.5
+  resolution: "@editorjs/dom@npm:0.0.5"
+  dependencies:
+    "@editorjs/helpers": "npm:^0.0.4"
+  checksum: 10c0/3618980264104d41fc1ad5472ec00cbb09c9294bd0b0632599fc3547951336c1b012128f0c7525d35599c6627d6963e67abf730d0819ae1502cd5d5800bd4afc
+  languageName: node
+  linkType: hard
+
+"@editorjs/dom@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@editorjs/dom@npm:1.0.1"
+  dependencies:
+    "@editorjs/helpers": "npm:^1.0.1"
+  checksum: 10c0/3446eb6bc7605a55f5b7c1452966eb5f942e7cd083d4f447f6c356cbca729e76cffe1025dceb286dc13ab82107d674325cbc1ac204f5b7027ecf5058d344a59c
+  languageName: node
+  linkType: hard
+
+"@editorjs/editorjs@npm:^2.29.1, @editorjs/editorjs@npm:^2.31.0":
+  version: 2.31.0
+  resolution: "@editorjs/editorjs@npm:2.31.0"
+  dependencies:
+    "@editorjs/caret": "npm:^1.0.1"
+    codex-notifier: "npm:^1.1.2"
+    codex-tooltip: "npm:^1.0.5"
+  checksum: 10c0/f58c35b3ca4e1489406d6962fa10d11a543587590616535392d1360ee4a1154462258976377344a51bac1067964fa6823c539e243a7e63e9d608ca826137cc90
+  languageName: node
+  linkType: hard
+
+"@editorjs/embed@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "@editorjs/embed@npm:2.8.0"
+  dependencies:
+    "@editorjs/editorjs": "npm:^2.31.0"
+  checksum: 10c0/995e22d2631d1d0ae9bc2365b47b33a8881284b6844898b35f8c8bae08b91f156b6674f846b8e6388915281e89a9696b1f3331990a5e8d63559b290a867a51f6
+  languageName: node
+  linkType: hard
+
+"@editorjs/header@npm:^2.8.8":
+  version: 2.8.8
+  resolution: "@editorjs/header@npm:2.8.8"
+  dependencies:
+    "@codexteam/icons": "npm:^0.0.5"
+    "@editorjs/editorjs": "npm:^2.29.1"
+  checksum: 10c0/c208d2ea852c0e75b09a03ce08db558249c0e1efd17459f4adc80de9c30963b69129f744764769047e1766403e2e0fa249a5086eefdbcd5f3a082fbcd3ee4ec6
+  languageName: node
+  linkType: hard
+
+"@editorjs/helpers@npm:^0.0.4":
+  version: 0.0.4
+  resolution: "@editorjs/helpers@npm:0.0.4"
+  checksum: 10c0/fe6993119313166a9d5e91ea399f3ae3551db049026b218ab177d39154d64ea8d6f6e95fa29ae64756e2b74208e74dd0d89197610143be48aed3aa60465177cf
+  languageName: node
+  linkType: hard
+
+"@editorjs/helpers@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@editorjs/helpers@npm:1.0.1"
+  checksum: 10c0/d163f8b3e7eb95bdc300f55e8700c38faeae90851f4759dd7f8257bdda5054909b60a23d2c5ec1db8d4909b6c86d151372ea35d1dae0b6e98c02082dcff10a96
+  languageName: node
+  linkType: hard
+
+"@editorjs/image@npm:^2.10.3":
+  version: 2.10.3
+  resolution: "@editorjs/image@npm:2.10.3"
+  dependencies:
+    "@codexteam/icons": "npm:^0.3.0"
+  checksum: 10c0/929893d74974bc6c814e179fc2d048ba0bdc626bbfc34b3ae448498e67afed6dd4071591fcb57abc655337451dd8addadfd1caf85097d772dd04c815cabec1dc
+  languageName: node
+  linkType: hard
+
+"@editorjs/list@npm:^2.0.9":
+  version: 2.0.9
+  resolution: "@editorjs/list@npm:2.0.9"
+  dependencies:
+    "@codexteam/icons": "npm:^0.3.2"
+  checksum: 10c0/f627af2e1bbf403c3f7669bd2d23b917f1d55430d9faabd732cf5457635cd98432d0ff53722dc949597822408606288643af3d86d3ffe0b40e0cc4188916559e
+  languageName: node
+  linkType: hard
+
+"@editorjs/paragraph@npm:^2.11.7":
+  version: 2.11.7
+  resolution: "@editorjs/paragraph@npm:2.11.7"
+  dependencies:
+    "@codexteam/icons": "npm:^0.0.4"
+  checksum: 10c0/0a81d900196378fb8603a5a8bbc91a65aa3eae78612dddf4fdb1f039eaafca4a9b2e13bf9607faed413cbd7f42bb7d287cdafdd9e08117c825808df907de17f3
+  languageName: node
+  linkType: hard
+
+"@editorjs/quote@npm:^2.7.6":
+  version: 2.7.6
+  resolution: "@editorjs/quote@npm:2.7.6"
+  dependencies:
+    "@codexteam/icons": "npm:^0.3.2"
+    "@editorjs/dom": "npm:^0.0.5"
+  checksum: 10c0/7e47c32589fe5bfbf4808ed5153d465d01c35428f5aa549267cad86f8710365167a3c113f0dcbf954629b31436d453832e5ff88e30ed5643faae64c5e34b5d73
+  languageName: node
+  linkType: hard
+
+"@editorjs/raw@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "@editorjs/raw@npm:2.5.1"
+  dependencies:
+    "@codexteam/icons": "npm:^0.0.4"
+  checksum: 10c0/67914f85c13e4e6c59d922138a31b370dd400cced637c307a9271acc2fa2655549308e2b065fc7c6dc0ff6d844b353cb409d3728a75466637a5255ab8cce8ee0
+  languageName: node
+  linkType: hard
+
+"@editorjs/simple-image@npm:^1.6.0":
+  version: 1.6.0
+  resolution: "@editorjs/simple-image@npm:1.6.0"
+  dependencies:
+    "@codexteam/icons": "npm:^0.0.6"
+  checksum: 10c0/b178e05e785e60dab8fc6985e940e3a952b8f2b4266402f043ecbaa1046590bb61f47192d486682cb1a755883ed2664c62cd8587572a2223c3487d3a5ca701be
+  languageName: node
+  linkType: hard
+
+"@editorjs/table@npm:^2.4.5":
+  version: 2.4.5
+  resolution: "@editorjs/table@npm:2.4.5"
+  dependencies:
+    "@codexteam/icons": "npm:^0.0.6"
+  checksum: 10c0/14473e381129b7428d8723fc905d17c920f5434581f200d11a062fc11103bf1e80f48675b92dd891819d36b8430b45d0822ef6fb0c758eeb55363f1f4615796c
   languageName: node
   linkType: hard
 
@@ -2734,6 +2924,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tailwindcss/typography@npm:^0.5.19":
+  version: 0.5.19
+  resolution: "@tailwindcss/typography@npm:0.5.19"
+  dependencies:
+    postcss-selector-parser: "npm:6.0.10"
+  peerDependencies:
+    tailwindcss: "*"
+  checksum: 10c0/b9eb38e9c7adca59b55d7321275f59ea62c7d65a0c3d324c18c1c5864c69ec6e15b838e7df61e531cda62cfea08627b4343bc419bb0996182321891e5171e4d6
+  languageName: node
+  linkType: hard
+
 "@tsconfig/node10@npm:^1.0.7":
   version: 1.0.11
   resolution: "@tsconfig/node10@npm:1.0.11"
@@ -3621,6 +3822,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"codex-notifier@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "codex-notifier@npm:1.1.2"
+  checksum: 10c0/fef16977cdc067802004a29f3e52862f28a2821e7079c716ba27a8d51b218e566201a560614d54d3d4ea9c8ece3ffe49304ec9df38cde75da551db32afc508c8
+  languageName: node
+  linkType: hard
+
+"codex-tooltip@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "codex-tooltip@npm:1.0.5"
+  checksum: 10c0/1834fb829044ea64b95fe7fb4eb4bfa9e8a667c2e51830a1bb11819921553e4978c4a3ee18643efc1f85f8e9766a43ab941d77d445420908c3d52bae5f3f0276
+  languageName: node
+  linkType: hard
+
 "color-convert@npm:^2.0.1":
   version: 2.0.1
   resolution: "color-convert@npm:2.0.1"
@@ -3707,6 +3922,15 @@ __metadata:
     shebang-command: "npm:^2.0.0"
     which: "npm:^2.0.1"
   checksum: 10c0/053ea8b2135caff68a9e81470e845613e374e7309a47731e81639de3eaeb90c3d01af0e0b44d2ab9d50b43467223b88567dfeb3262db942dc063b9976718ffc1
+  languageName: node
+  linkType: hard
+
+"cssesc@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "cssesc@npm:3.0.0"
+  bin:
+    cssesc: bin/cssesc
+  checksum: 10c0/6bcfd898662671be15ae7827120472c5667afb3d7429f1f917737f3bf84c4176003228131b643ae74543f17a394446247df090c597bb9a728cce298606ed0aa7
   languageName: node
   linkType: hard
 
@@ -6903,6 +7127,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-selector-parser@npm:6.0.10":
+  version: 6.0.10
+  resolution: "postcss-selector-parser@npm:6.0.10"
+  dependencies:
+    cssesc: "npm:^3.0.0"
+    util-deprecate: "npm:^1.0.2"
+  checksum: 10c0/a0b27c5e3f7604c8dc7cd83f145fdd7b21448e0d86072da99e0d78e536ba27aa9db2d42024c50aa530408ee517c4bdc0260529e1afb56608f9a82e839c207e82
+  languageName: node
+  linkType: hard
+
 "postcss@npm:8.4.31":
   version: 8.4.31
   resolution: "postcss@npm:8.4.31"
@@ -7954,10 +8188,24 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "telapo@workspace:."
   dependencies:
+    "@editorjs/checklist": "npm:^1.6.0"
+    "@editorjs/code": "npm:^2.9.3"
+    "@editorjs/delimiter": "npm:^1.4.2"
+    "@editorjs/editorjs": "npm:^2.31.0"
+    "@editorjs/embed": "npm:^2.8.0"
+    "@editorjs/header": "npm:^2.8.8"
+    "@editorjs/image": "npm:^2.10.3"
+    "@editorjs/list": "npm:^2.0.9"
+    "@editorjs/paragraph": "npm:^2.11.7"
+    "@editorjs/quote": "npm:^2.7.6"
+    "@editorjs/raw": "npm:^2.5.1"
+    "@editorjs/simple-image": "npm:^1.6.0"
+    "@editorjs/table": "npm:^2.4.5"
     "@inquirer/prompts": "npm:^8.0.2"
     "@prisma/adapter-pg": "npm:^7.1.0"
     "@prisma/client": "npm:^7.1.0"
     "@tailwindcss/postcss": "npm:^4.1.17"
+    "@tailwindcss/typography": "npm:^0.5.19"
     "@types/bcrypt": "npm:^6.0.0"
     "@types/lodash": "npm:^4.17.21"
     "@types/node": "npm:^22.10.0"
@@ -7985,6 +8233,7 @@ __metadata:
     ts-node: "npm:^10.9.2"
     tsx: "npm:^4.21.0"
     typescript: "npm:^5.7.2"
+    zod: "npm:^4.1.13"
   languageName: unknown
   linkType: soft
 
@@ -8311,6 +8560,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"util-deprecate@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "util-deprecate@npm:1.0.2"
+  checksum: 10c0/41a5bdd214df2f6c3ecf8622745e4a366c4adced864bc3c833739791aeeeb1838119af7daed4ba36428114b5c67dcda034a79c882e97e43c03e66a4dd7389942
+  languageName: node
+  linkType: hard
+
 "v8-compile-cache-lib@npm:^3.0.1":
   version: 3.0.1
   resolution: "v8-compile-cache-lib@npm:3.0.1"
@@ -8553,7 +8809,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:^3.25.0 || ^4.0.0":
+"zod@npm:^3.25.0 || ^4.0.0, zod@npm:^4.1.13":
   version: 4.1.13
   resolution: "zod@npm:4.1.13"
   checksum: 10c0/d7e74e82dba81a91ffc3239cd85bc034abe193a28f7087a94ab258a3e48e9a7ca4141920cac979a0d781495b48fc547777394149f26be04c3dc642f58bbc3941

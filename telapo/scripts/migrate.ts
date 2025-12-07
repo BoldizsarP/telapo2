@@ -1,22 +1,11 @@
 import { Command, Option } from "commander";
-import { MigrateLegacy } from "./migration_scripts/migrate_legacy";
-import { Migration } from "./migration_scripts/migration_types";
+import { MigrateLegacy } from "./migration_scripts/draws_legacy";
+import { Migration, runMigration } from "./migration_scripts/migration_types";
+import { MigrateFamilyNames } from "./migration_scripts/family_names";
 import { Ask } from "./script-utils/ask";
 import { Program } from "./script-utils/program";
 import prisma from "../utils/connect";
-const migrations: Migration[] = [new MigrateLegacy()];
-
-async function runMigration(migration: Migration) {
-  try {
-    await migration.run();
-    await migration.saveResult(true);
-  } catch (error) {
-    await migration.saveResult(
-      false,
-      error instanceof Error ? error.message : undefined
-    );
-  }
-}
+const migrations: Migration[] = [new MigrateLegacy(), new MigrateFamilyNames()];
 
 function makeMainProgram() {
   const program = new Command();
@@ -36,7 +25,9 @@ async function main() {
     message: "Do you want to re-apply the migration?",
     default: false,
   });
-  const ranMigrations = await prisma.customMigration.findMany();
+  const ranMigrations = await prisma.customMigration.findMany({
+    where: { success: true },
+  });
   const action = await Ask.select("action", {
     message: "What action do you want to perform?",
     choices: migrations

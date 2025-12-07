@@ -28,7 +28,7 @@ const PasswordResetRequest = ({ baseUrl }: { baseUrl: string }) => {
       </p>
 
       <form action={formAction} className="form">
-        <label htmlFor="email" className="label">
+        <label htmlFor="email" className="label text-festive-green">
           Enter Your Email Address:
         </label>
         <input

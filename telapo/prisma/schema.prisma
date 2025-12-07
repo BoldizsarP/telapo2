@@ -24,8 +24,17 @@ model User {
     drawnByHistory DrawHistory[]  @relation("DrawnByHistory")
     drewHistory    DrawHistory[]  @relation("DrewHistory")
     isActive       Boolean        @default(true)
-    familyGroupObj FamilyGroup?   @relation(fields: [familyGroupId], references: [id])
-    familyGroupId  String?        @db.Uuid
+    familyGroupObj FamilyGroup    @relation(fields: [familyGroupId], references: [id])
+    familyGroupId  String         @db.Uuid
+    wishlists      Wishlist?
+}
+
+model Wishlist {
+    userId String @id @db.Uuid
+    user   User   @relation(fields: [userId], references: [id])
+    data   Json   @default("{}")
+
+    @@unique([userId])
 }
 
 model FamilyGroup {
@@ -44,7 +53,7 @@ model PWResetToken {
 model LatestDrew {
     whoDrew       User   @relation("LatestDrew", fields: [whoDrewId], references: [id])
     whoDrewId     String @unique @db.Uuid
-    whoWasDraw    User   @relation("LatestDrawn", fields: [whoWasDrawnId], references: [id])
+    whoWasDrawn   User   @relation("LatestDrawn", fields: [whoWasDrawnId], references: [id])
     whoWasDrawnId String @unique @db.Uuid
 
     @@unique([whoDrewId, whoWasDrawnId])

@@ -20,4 +20,17 @@ class MigrationBase {
   }
 }
 
-export { MigrationBase, type Migration };
+async function runMigration(migration: Migration) {
+  try {
+    await migration.run();
+    await migration.saveResult(true);
+  } catch (error) {
+    await migration.saveResult(
+      false,
+      error instanceof Error ? error.message : undefined
+    );
+    throw error;
+  }
+}
+
+export { MigrationBase, type Migration, runMigration };

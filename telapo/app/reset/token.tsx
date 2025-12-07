@@ -45,7 +45,7 @@ export const PasswordReset = ({ token }: { token: string }) => {
                 type={showPassword ? "text" : "password"}
                 id="password"
                 name="psw"
-                placeholder="Enter your secret code..."
+                placeholder="Enter your new password..."
                 value={password}
                 onChange={handlePasswordChange}
               />
@@ -66,7 +66,7 @@ export const PasswordReset = ({ token }: { token: string }) => {
                 type={showPassword ? "text" : "password"}
                 id="confirm-password"
                 name="psw_confirm"
-                placeholder="Re-enter your secret code..."
+                placeholder="Re-enter your new password..."
                 value={confirmPassword}
                 onChange={handleConfirmPasswordChange}
               />

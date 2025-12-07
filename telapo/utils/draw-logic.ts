@@ -1,7 +1,14 @@
+import { User } from "@/generated/prisma/client";
+
 export type Draw = {
   drewMemberId: string;
   whoDrewFamilyGroup: string;
   whoWasDrawnFamilyGroup: string;
+};
+
+export type ExecutedDraw = {
+  whoDrew: User;
+  whoWasDrawn: User;
 };
 
 export type DrawSeed = {

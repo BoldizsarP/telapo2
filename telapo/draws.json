@@ -1,0 +1,627 @@
+[
+  {
+    "whoDrew": {
+      "id": "e171d157-40b7-45a2-9cc6-6d8d93713d30",
+      "email": "fulopbence91@gmail.com",
+      "firstName": "Bence",
+      "lastName": "Fulop",
+      "familyGroup": "Sinkovicz Guild",
+      "passhash": "$2b$10$XLO.w.SlfyqHG2Ip9KFgeOru7/48iosx0Cmt86ggDgznbH5KhXsJS",
+      "drawsId": "ff0c7cf2-3646-4ca7-89db-9ec47db7a9b5",
+      "isActive": true,
+      "familyGroupId": "a68c3dd8-bf55-4030-b58b-2d37f5ffbee1"
+    },
+    "whoWasDrawn": {
+      "id": "39ac28d3-271d-4f9c-88e9-1e96eb304620",
+      "email": "kfejes49@gmail.com",
+      "firstName": "Karcsi",
+      "lastName": "Fejes",
+      "familyGroup": "Fejes Syndicate",
+      "passhash": "$2b$10$f.aLxlDu7gihS4pGtyV5QeEdcyjpLl6S9LIXtgBSyiqr8I2pRIvJ6",
+      "drawsId": "c86e53f0-633f-48d0-8200-a41043df10e5",
+      "isActive": true,
+      "familyGroupId": "80e20aa5-068b-45b4-b9a3-8b96c442c1cc"
+    },
+    "score": 0
+  },
+  {
+    "whoDrew": {
+      "id": "860384d2-b5d7-48a7-a40a-1656808d53e2",
+      "email": "edesfsebi@gmail.com",
+      "firstName": "Sebestyén",
+      "lastName": "Édes",
+      "familyGroup": "Edes Brotherhood",
+      "passhash": "$2b$10$VZMiFs.l0uvCdRZ9VSYZhOqnKT3aXyk7kp4QoJZrmR/0tiIY4Iu0G",
+      "drawsId": null,
+      "isActive": true,
+      "familyGroupId": "80e20aa5-068b-45b4-b9a3-8b96c442c1cc"
+    },
+    "whoWasDrawn": {
+      "id": "3c787a6a-c22e-4348-ab1b-bf04181f1128",
+      "email": "Linda_sinkovicz@yahoo.com",
+      "firstName": "linda",
+      "lastName": "Schneider",
+      "familyGroup": "Sinkovicz Guild",
+      "passhash": "$2b$10$5NgkNsTyyUuZiLJEHzZ9Se51QVIiree1OvjZyTHlvDCfu1RdPtiJC",
+      "drawsId": "918d2539-f8ed-4033-b680-a86bea3dd55a",
+      "isActive": true,
+      "familyGroupId": "a68c3dd8-bf55-4030-b58b-2d37f5ffbee1"
+    },
+    "score": 0
+  },
+  {
+    "whoDrew": {
+      "id": "c86e53f0-633f-48d0-8200-a41043df10e5",
+      "email": "fadrien@leopart.hu",
+      "firstName": "Babu",
+      "lastName": "Fejes",
+      "familyGroup": "Balog Alliance",
+      "passhash": "$2b$10$tdQC4IWEczT8Zfun8gn4K.mT5ocKHU.xWLSbETwSEar8X.fh8umn6",
+      "drawsId": "e9881a9b-cdea-4d23-ab78-d7bbdeab22e0",
+      "isActive": true,
+      "familyGroupId": "40e65cfc-e2a1-44cc-89c3-e329d8a2d3e5"
+    },
+    "whoWasDrawn": {
+      "id": "89736a07-8743-47d2-a2cb-ef0afa85f03f",
+      "email": "flora.pal90@gmail.com",
+      "firstName": "Flóra",
+      "lastName": "Nika-Pal",
+      "familyGroup": "Pal Institute",
+      "passhash": "$2b$10$N2NTFDMnZC86/l7PVoTyq.7JEMFpCdhhv85jofNywjmaUYbdoCfsG",
+      "drawsId": "39ac28d3-271d-4f9c-88e9-1e96eb304620",
+      "isActive": true,
+      "familyGroupId": "7b0131c0-0344-4ab0-a6d1-6abe22572bc9"
+    },
+    "score": 0
+  },
+  {
+    "whoDrew": {
+      "id": "918d2539-f8ed-4033-b680-a86bea3dd55a",
+      "email": "oneszke@gmail.com",
+      "firstName": "Barni",
+      "lastName": "Olah",
+      "familyGroup": "Balog Alliance",
+      "passhash": "$2b$10$ekt0zlBKZXvHUIyv/vNP/O.1m0UsZG2zNFtaOKPXrkfv9PyhtBxAS",
+      "drawsId": "89736a07-8743-47d2-a2cb-ef0afa85f03f",
+      "isActive": true,
+      "familyGroupId": "40e65cfc-e2a1-44cc-89c3-e329d8a2d3e5"
+    },
+    "whoWasDrawn": {
+      "id": "19af86ec-f430-480b-aba4-83edd03d6f4d",
+      "email": "majnekpanna.bella@gmail.com",
+      "firstName": "Pannabella",
+      "lastName": "Majnek",
+      "familyGroup": "Sinkovicz Guild",
+      "passhash": "$2b$10$/HOu61fJ/luq8dZTh62WxePE.KtEJSRLD2KK9C4Ajtm4.fSDmVzWS",
+      "drawsId": "b562ec4d-f725-4364-be27-a5794db1c228",
+      "isActive": true,
+      "familyGroupId": "a68c3dd8-bf55-4030-b58b-2d37f5ffbee1"
+    },
+    "score": 0
+  },
+  {
+    "whoDrew": {
+      "id": "3c787a6a-c22e-4348-ab1b-bf04181f1128",
+      "email": "Linda_sinkovicz@yahoo.com",
+      "firstName": "linda",
+      "lastName": "Schneider",
+      "familyGroup": "Sinkovicz Guild",
+      "passhash": "$2b$10$5NgkNsTyyUuZiLJEHzZ9Se51QVIiree1OvjZyTHlvDCfu1RdPtiJC",
+      "drawsId": "918d2539-f8ed-4033-b680-a86bea3dd55a",
+      "isActive": true,
+      "familyGroupId": "a68c3dd8-bf55-4030-b58b-2d37f5ffbee1"
+    },
+    "whoWasDrawn": {
+      "id": "3a80bbda-9083-40e3-85e1-3d52de4904f8",
+      "email": "palbence92@gmail.com",
+      "firstName": "Bence",
+      "lastName": "Pal",
+      "familyGroup": "Pal Institute",
+      "passhash": "$2b$10$6mdcS3lDoLOCqMBaaeJP2.xueLO9nvSKXMUE1rS6mPXHaE92T1Fg6",
+      "drawsId": "e171d157-40b7-45a2-9cc6-6d8d93713d30",
+      "isActive": true,
+      "familyGroupId": "7b0131c0-0344-4ab0-a6d1-6abe22572bc9"
+    },
+    "score": 0
+  },
+  {
+    "whoDrew": {
+      "id": "89736a07-8743-47d2-a2cb-ef0afa85f03f",
+      "email": "flora.pal90@gmail.com",
+      "firstName": "Flóra",
+      "lastName": "Nika-Pal",
+      "familyGroup": "Pal Institute",
+      "passhash": "$2b$10$N2NTFDMnZC86/l7PVoTyq.7JEMFpCdhhv85jofNywjmaUYbdoCfsG",
+      "drawsId": "39ac28d3-271d-4f9c-88e9-1e96eb304620",
+      "isActive": true,
+      "familyGroupId": "7b0131c0-0344-4ab0-a6d1-6abe22572bc9"
+    },
+    "whoWasDrawn": {
+      "id": "ff0c7cf2-3646-4ca7-89db-9ec47db7a9b5",
+      "email": "bpeter@appaloosagroup.hu",
+      "firstName": "Péter",
+      "lastName": "Balog",
+      "familyGroup": "Balog Alliance",
+      "passhash": "$2b$10$fh9NrBRIwKB6i9eguEDuP..myn8HAsE5LiTFY./kMXhfLdIYJfIUm",
+      "drawsId": "6608f1d0-b377-46a1-83b8-adc65e16faea",
+      "isActive": true,
+      "familyGroupId": "40e65cfc-e2a1-44cc-89c3-e329d8a2d3e5"
+    },
+    "score": 0
+  },
+  {
+    "whoDrew": {
+      "id": "54ba22f2-e2f9-405a-a18e-479e024b4bb3",
+      "email": "laurabalog213@gmail.com",
+      "firstName": "Laura",
+      "lastName": "Balog",
+      "familyGroup": "Balog Alliance",
+      "passhash": "$2b$10$FractQbBAdD8lWoPKk2RTeyglCP9CXrgxBZhq2zcVRIaCVQ1EVGF6",
+      "drawsId": "25a26a35-76e6-4c29-83c8-08a024d4f980",
+      "isActive": true,
+      "familyGroupId": "40e65cfc-e2a1-44cc-89c3-e329d8a2d3e5"
+    },
+    "whoWasDrawn": {
+      "id": "6608f1d0-b377-46a1-83b8-adc65e16faea",
+      "email": "katafejes12@gmail.com",
+      "firstName": "Kata",
+      "lastName": "Fejes",
+      "familyGroup": "Pal Institute",
+      "passhash": "$2b$10$wxVaiMriTKYaL/2D7DPUJeTz2lZh6bBX2JE1jBjC40SvgvHiLMMte",
+      "drawsId": "933837f0-cc86-4a4e-84fb-d6b70ebb1369",
+      "isActive": true,
+      "familyGroupId": "7b0131c0-0344-4ab0-a6d1-6abe22572bc9"
+    },
+    "score": 1
+  },
+  {
+    "whoDrew": {
+      "id": "a3f50342-498a-4449-bf35-2d2ad4cac6ca",
+      "email": "szabo.bence91@gmail.com",
+      "firstName": "Bence",
+      "lastName": "Szabo",
+      "familyGroup": "Balog Alliance",
+      "passhash": "$2b$10$xQF4cmRJlsxyceyXwBO1AeCLmSRfhmlUb/jufF4c.fuDtxOndr8gq",
+      "drawsId": "4324daf3-9c12-41e1-8d77-78bc6077f111",
+      "isActive": true,
+      "familyGroupId": "40e65cfc-e2a1-44cc-89c3-e329d8a2d3e5"
+    },
+    "whoWasDrawn": {
+      "id": "9a7b6105-057a-473b-99f3-d46fb9b6dffe",
+      "email": "sinkovicz@t-online.hu",
+      "firstName": "Eva",
+      "lastName": "Polonyi",
+      "familyGroup": "Sinkovicz Guild",
+      "passhash": "$2b$10$yOojs7MT5TFfkwDT.epDme1XS58zd8TioGhVVFcgWJ5Sx5KF7oDwa",
+      "drawsId": "d81c4fa7-dc42-4adf-8fb5-0a544c7ca951",
+      "isActive": true,
+      "familyGroupId": "a68c3dd8-bf55-4030-b58b-2d37f5ffbee1"
+    },
+    "score": 1
+  },
+  {
+    "whoDrew": {
+      "id": "1510299c-9e72-4024-b13e-34df97023b33",
+      "email": "fannidominika@gmail.com",
+      "firstName": "Fanni",
+      "lastName": "Karkus",
+      "familyGroup": "Balog Alliance",
+      "passhash": "$2b$10$T5RY8NfGKZK9ouRcOGWIFuJ7JTIJ96uVdThUrfJUKg1/gV.GWZvES",
+      "drawsId": "e9aebf3d-a5a6-427e-a60a-de1bc156b4cb",
+      "isActive": true,
+      "familyGroupId": "40e65cfc-e2a1-44cc-89c3-e329d8a2d3e5"
+    },
+    "whoWasDrawn": {
+      "id": "4324daf3-9c12-41e1-8d77-78bc6077f111",
+      "email": "drfejestunde@gmail.com",
+      "firstName": "Tünde",
+      "lastName": "Fejes",
+      "familyGroup": "Edes Brotherhood",
+      "passhash": "$2b$10$uWOMxh6qlmu2g7bXaKVhre2oglrpxFy8XH8m5hIuyzbl9KN.t6sKS",
+      "drawsId": "3c787a6a-c22e-4348-ab1b-bf04181f1128",
+      "isActive": true,
+      "familyGroupId": "80e20aa5-068b-45b4-b9a3-8b96c442c1cc"
+    },
+    "score": 0
+  },
+  {
+    "whoDrew": {
+      "id": "39ac28d3-271d-4f9c-88e9-1e96eb304620",
+      "email": "kfejes49@gmail.com",
+      "firstName": "Karcsi",
+      "lastName": "Fejes",
+      "familyGroup": "Fejes Syndicate",
+      "passhash": "$2b$10$f.aLxlDu7gihS4pGtyV5QeEdcyjpLl6S9LIXtgBSyiqr8I2pRIvJ6",
+      "drawsId": "c86e53f0-633f-48d0-8200-a41043df10e5",
+      "isActive": true,
+      "familyGroupId": "80e20aa5-068b-45b4-b9a3-8b96c442c1cc"
+    },
+    "whoWasDrawn": {
+      "id": "b809e1ed-f2a9-4a12-926e-9539ee2bf5cd",
+      "email": "boldizsarpal@invenshure.com",
+      "firstName": "Boldizsar",
+      "lastName": "Pal",
+      "familyGroup": "Pal Institute",
+      "passhash": "$2b$10$HqV5LfsBLF49w7iXaDxWQerkEnZXqzHwgNF03.eYY2jqrv4NQHoFi",
+      "drawsId": "9a7b6105-057a-473b-99f3-d46fb9b6dffe",
+      "isActive": true,
+      "familyGroupId": "7b0131c0-0344-4ab0-a6d1-6abe22572bc9"
+    },
+    "score": 0
+  },
+  {
+    "whoDrew": {
+      "id": "6608f1d0-b377-46a1-83b8-adc65e16faea",
+      "email": "katafejes12@gmail.com",
+      "firstName": "Kata",
+      "lastName": "Fejes",
+      "familyGroup": "Pal Institute",
+      "passhash": "$2b$10$wxVaiMriTKYaL/2D7DPUJeTz2lZh6bBX2JE1jBjC40SvgvHiLMMte",
+      "drawsId": "933837f0-cc86-4a4e-84fb-d6b70ebb1369",
+      "isActive": true,
+      "familyGroupId": "7b0131c0-0344-4ab0-a6d1-6abe22572bc9"
+    },
+    "whoWasDrawn": {
+      "id": "8f8f336e-72ea-4696-a5bf-4c359d7594f6",
+      "email": "reka_sinkovicz@yahoo.com",
+      "firstName": "Réka",
+      "lastName": "Sinkovicz",
+      "familyGroup": "Sinkovicz Guild",
+      "passhash": "$2b$10$DsKXzkTpPF/3lG9lqQS65.GUykH6yzv7iGUxvY4kHN7NbHlqmLPhm",
+      "drawsId": "54ba22f2-e2f9-405a-a18e-479e024b4bb3",
+      "isActive": true,
+      "familyGroupId": "a68c3dd8-bf55-4030-b58b-2d37f5ffbee1"
+    },
+    "score": 0
+  },
+  {
+    "whoDrew": {
+      "id": "e9881a9b-cdea-4d23-ab78-d7bbdeab22e0",
+      "email": "schnest1@googlemail.com",
+      "firstName": "stephan",
+      "lastName": "Schneider",
+      "familyGroup": "Sinkovicz Guild",
+      "passhash": "$2b$10$.ZIulP/G9wNUaQM/q.jWiOhoqUARdj1XNR.gpH.FntGPneRe0Iy3.",
+      "drawsId": "3a80bbda-9083-40e3-85e1-3d52de4904f8",
+      "isActive": true,
+      "familyGroupId": "a68c3dd8-bf55-4030-b58b-2d37f5ffbee1"
+    },
+    "whoWasDrawn": {
+      "id": "54ba22f2-e2f9-405a-a18e-479e024b4bb3",
+      "email": "laurabalog213@gmail.com",
+      "firstName": "Laura",
+      "lastName": "Balog",
+      "familyGroup": "Balog Alliance",
+      "passhash": "$2b$10$FractQbBAdD8lWoPKk2RTeyglCP9CXrgxBZhq2zcVRIaCVQ1EVGF6",
+      "drawsId": "25a26a35-76e6-4c29-83c8-08a024d4f980",
+      "isActive": true,
+      "familyGroupId": "40e65cfc-e2a1-44cc-89c3-e329d8a2d3e5"
+    },
+    "score": 0
+  },
+  {
+    "whoDrew": {
+      "id": "6efb6168-f2e8-4b1f-8a4c-032a8d1a130d",
+      "email": "sinkovicz.zita@gmail.com",
+      "firstName": "zita",
+      "lastName": "Sinkovicz",
+      "familyGroup": "Sinkovicz Guild",
+      "passhash": "$2b$10$YOcnysfggyXPsCwkt.l/au.1qPkt4V/RIBtUd57fKAzfF4QwVESsu",
+      "drawsId": "46b180f1-9ea6-4021-83f3-5c303cf04687",
+      "isActive": true,
+      "familyGroupId": "a68c3dd8-bf55-4030-b58b-2d37f5ffbee1"
+    },
+    "whoWasDrawn": {
+      "id": "a3f50342-498a-4449-bf35-2d2ad4cac6ca",
+      "email": "szabo.bence91@gmail.com",
+      "firstName": "Bence",
+      "lastName": "Szabo",
+      "familyGroup": "Balog Alliance",
+      "passhash": "$2b$10$xQF4cmRJlsxyceyXwBO1AeCLmSRfhmlUb/jufF4c.fuDtxOndr8gq",
+      "drawsId": "4324daf3-9c12-41e1-8d77-78bc6077f111",
+      "isActive": true,
+      "familyGroupId": "40e65cfc-e2a1-44cc-89c3-e329d8a2d3e5"
+    },
+    "score": 1
+  },
+  {
+    "whoDrew": {
+      "id": "e9aebf3d-a5a6-427e-a60a-de1bc156b4cb",
+      "email": "smartibor@gmail.com",
+      "firstName": "Tibi",
+      "lastName": "Pal",
+      "familyGroup": "Pal Institute",
+      "passhash": "$2b$10$21lIWmVjDbg9ldDyo6G18.sWwitrBWdLmfdYs2tchAoAEFhcM.5j6",
+      "drawsId": "6efb6168-f2e8-4b1f-8a4c-032a8d1a130d",
+      "isActive": true,
+      "familyGroupId": "7b0131c0-0344-4ab0-a6d1-6abe22572bc9"
+    },
+    "whoWasDrawn": {
+      "id": "933837f0-cc86-4a4e-84fb-d6b70ebb1369",
+      "email": "edes.levente@gmail.com",
+      "firstName": "Levente",
+      "lastName": "Edes",
+      "familyGroup": "Edes Brotherhood",
+      "passhash": "$2b$10$rEF6wm19rbea1MWyDipzx.h.yoqJhvlYObyXVqk5EsVMlpEoI9p2m",
+      "drawsId": "1510299c-9e72-4024-b13e-34df97023b33",
+      "isActive": true,
+      "familyGroupId": "80e20aa5-068b-45b4-b9a3-8b96c442c1cc"
+    },
+    "score": 0
+  },
+  {
+    "whoDrew": {
+      "id": "9a7b6105-057a-473b-99f3-d46fb9b6dffe",
+      "email": "sinkovicz@t-online.hu",
+      "firstName": "Eva",
+      "lastName": "Polonyi",
+      "familyGroup": "Sinkovicz Guild",
+      "passhash": "$2b$10$yOojs7MT5TFfkwDT.epDme1XS58zd8TioGhVVFcgWJ5Sx5KF7oDwa",
+      "drawsId": "d81c4fa7-dc42-4adf-8fb5-0a544c7ca951",
+      "isActive": true,
+      "familyGroupId": "a68c3dd8-bf55-4030-b58b-2d37f5ffbee1"
+    },
+    "whoWasDrawn": {
+      "id": "e9aebf3d-a5a6-427e-a60a-de1bc156b4cb",
+      "email": "smartibor@gmail.com",
+      "firstName": "Tibi",
+      "lastName": "Pal",
+      "familyGroup": "Pal Institute",
+      "passhash": "$2b$10$21lIWmVjDbg9ldDyo6G18.sWwitrBWdLmfdYs2tchAoAEFhcM.5j6",
+      "drawsId": "6efb6168-f2e8-4b1f-8a4c-032a8d1a130d",
+      "isActive": true,
+      "familyGroupId": "7b0131c0-0344-4ab0-a6d1-6abe22572bc9"
+    },
+    "score": 1
+  },
+  {
+    "whoDrew": {
+      "id": "d81c4fa7-dc42-4adf-8fb5-0a544c7ca951",
+      "email": "sara.balog93@gmail.com",
+      "firstName": "Sára",
+      "lastName": "Balog-Szabo",
+      "familyGroup": "Balog Alliance",
+      "passhash": "$2b$10$E6XFxlo6/McoNHYHfBZr7.4YBOzVILI95dBDxehH9y8HCM7SGcjEm",
+      "drawsId": "19af86ec-f430-480b-aba4-83edd03d6f4d",
+      "isActive": true,
+      "familyGroupId": "40e65cfc-e2a1-44cc-89c3-e329d8a2d3e5"
+    },
+    "whoWasDrawn": {
+      "id": "25a26a35-76e6-4c29-83c8-08a024d4f980",
+      "email": "csibi48@gmail.com",
+      "firstName": "Csibi",
+      "lastName": "Fejes",
+      "familyGroup": "Fejes Syndicate",
+      "passhash": "$2b$10$O4SKjD5s4IeStkdkysW9GeiiOqFREEAaWmngLL3iiyRGCVchfuvaW",
+      "drawsId": "b809e1ed-f2a9-4a12-926e-9539ee2bf5cd",
+      "isActive": true,
+      "familyGroupId": "80e20aa5-068b-45b4-b9a3-8b96c442c1cc"
+    },
+    "score": 1
+  },
+  {
+    "whoDrew": {
+      "id": "4324daf3-9c12-41e1-8d77-78bc6077f111",
+      "email": "drfejestunde@gmail.com",
+      "firstName": "Tünde",
+      "lastName": "Fejes",
+      "familyGroup": "Edes Brotherhood",
+      "passhash": "$2b$10$uWOMxh6qlmu2g7bXaKVhre2oglrpxFy8XH8m5hIuyzbl9KN.t6sKS",
+      "drawsId": "3c787a6a-c22e-4348-ab1b-bf04181f1128",
+      "isActive": true,
+      "familyGroupId": "80e20aa5-068b-45b4-b9a3-8b96c442c1cc"
+    },
+    "whoWasDrawn": {
+      "id": "c86e53f0-633f-48d0-8200-a41043df10e5",
+      "email": "fadrien@leopart.hu",
+      "firstName": "Babu",
+      "lastName": "Fejes",
+      "familyGroup": "Balog Alliance",
+      "passhash": "$2b$10$tdQC4IWEczT8Zfun8gn4K.mT5ocKHU.xWLSbETwSEar8X.fh8umn6",
+      "drawsId": "e9881a9b-cdea-4d23-ab78-d7bbdeab22e0",
+      "isActive": true,
+      "familyGroupId": "40e65cfc-e2a1-44cc-89c3-e329d8a2d3e5"
+    },
+    "score": 0
+  },
+  {
+    "whoDrew": {
+      "id": "b809e1ed-f2a9-4a12-926e-9539ee2bf5cd",
+      "email": "boldizsarpal@invenshure.com",
+      "firstName": "Boldizsar",
+      "lastName": "Pal",
+      "familyGroup": "Pal Institute",
+      "passhash": "$2b$10$HqV5LfsBLF49w7iXaDxWQerkEnZXqzHwgNF03.eYY2jqrv4NQHoFi",
+      "drawsId": "9a7b6105-057a-473b-99f3-d46fb9b6dffe",
+      "isActive": true,
+      "familyGroupId": "7b0131c0-0344-4ab0-a6d1-6abe22572bc9"
+    },
+    "whoWasDrawn": {
+      "id": "d81c4fa7-dc42-4adf-8fb5-0a544c7ca951",
+      "email": "sara.balog93@gmail.com",
+      "firstName": "Sára",
+      "lastName": "Balog-Szabo",
+      "familyGroup": "Balog Alliance",
+      "passhash": "$2b$10$E6XFxlo6/McoNHYHfBZr7.4YBOzVILI95dBDxehH9y8HCM7SGcjEm",
+      "drawsId": "19af86ec-f430-480b-aba4-83edd03d6f4d",
+      "isActive": true,
+      "familyGroupId": "40e65cfc-e2a1-44cc-89c3-e329d8a2d3e5"
+    },
+    "score": 1
+  },
+  {
+    "whoDrew": {
+      "id": "8f8f336e-72ea-4696-a5bf-4c359d7594f6",
+      "email": "reka_sinkovicz@yahoo.com",
+      "firstName": "Réka",
+      "lastName": "Sinkovicz",
+      "familyGroup": "Sinkovicz Guild",
+      "passhash": "$2b$10$DsKXzkTpPF/3lG9lqQS65.GUykH6yzv7iGUxvY4kHN7NbHlqmLPhm",
+      "drawsId": "54ba22f2-e2f9-405a-a18e-479e024b4bb3",
+      "isActive": true,
+      "familyGroupId": "a68c3dd8-bf55-4030-b58b-2d37f5ffbee1"
+    },
+    "whoWasDrawn": {
+      "id": "860384d2-b5d7-48a7-a40a-1656808d53e2",
+      "email": "edesfsebi@gmail.com",
+      "firstName": "Sebestyén",
+      "lastName": "Édes",
+      "familyGroup": "Edes Brotherhood",
+      "passhash": "$2b$10$VZMiFs.l0uvCdRZ9VSYZhOqnKT3aXyk7kp4QoJZrmR/0tiIY4Iu0G",
+      "drawsId": null,
+      "isActive": true,
+      "familyGroupId": "80e20aa5-068b-45b4-b9a3-8b96c442c1cc"
+    },
+    "score": 1
+  },
+  {
+    "whoDrew": {
+      "id": "b562ec4d-f725-4364-be27-a5794db1c228",
+      "email": "bvazsony@gmail.com",
+      "firstName": "Vázsony",
+      "lastName": "Balog",
+      "familyGroup": "Balog Alliance",
+      "passhash": "$2b$10$2BGCETHewX/x/FmeqXQHye7CvXijDVCwN8819LxtfWLvd/V/5pnp2",
+      "drawsId": "8f8f336e-72ea-4696-a5bf-4c359d7594f6",
+      "isActive": true,
+      "familyGroupId": "40e65cfc-e2a1-44cc-89c3-e329d8a2d3e5"
+    },
+    "whoWasDrawn": {
+      "id": "e9881a9b-cdea-4d23-ab78-d7bbdeab22e0",
+      "email": "schnest1@googlemail.com",
+      "firstName": "stephan",
+      "lastName": "Schneider",
+      "familyGroup": "Sinkovicz Guild",
+      "passhash": "$2b$10$.ZIulP/G9wNUaQM/q.jWiOhoqUARdj1XNR.gpH.FntGPneRe0Iy3.",
+      "drawsId": "3a80bbda-9083-40e3-85e1-3d52de4904f8",
+      "isActive": true,
+      "familyGroupId": "a68c3dd8-bf55-4030-b58b-2d37f5ffbee1"
+    },
+    "score": 7
+  },
+  {
+    "whoDrew": {
+      "id": "933837f0-cc86-4a4e-84fb-d6b70ebb1369",
+      "email": "edes.levente@gmail.com",
+      "firstName": "Levente",
+      "lastName": "Edes",
+      "familyGroup": "Edes Brotherhood",
+      "passhash": "$2b$10$rEF6wm19rbea1MWyDipzx.h.yoqJhvlYObyXVqk5EsVMlpEoI9p2m",
+      "drawsId": "1510299c-9e72-4024-b13e-34df97023b33",
+      "isActive": true,
+      "familyGroupId": "80e20aa5-068b-45b4-b9a3-8b96c442c1cc"
+    },
+    "whoWasDrawn": {
+      "id": "6efb6168-f2e8-4b1f-8a4c-032a8d1a130d",
+      "email": "sinkovicz.zita@gmail.com",
+      "firstName": "zita",
+      "lastName": "Sinkovicz",
+      "familyGroup": "Sinkovicz Guild",
+      "passhash": "$2b$10$YOcnysfggyXPsCwkt.l/au.1qPkt4V/RIBtUd57fKAzfF4QwVESsu",
+      "drawsId": "46b180f1-9ea6-4021-83f3-5c303cf04687",
+      "isActive": true,
+      "familyGroupId": "a68c3dd8-bf55-4030-b58b-2d37f5ffbee1"
+    },
+    "score": 1
+  },
+  {
+    "whoDrew": {
+      "id": "19af86ec-f430-480b-aba4-83edd03d6f4d",
+      "email": "majnekpanna.bella@gmail.com",
+      "firstName": "Pannabella",
+      "lastName": "Majnek",
+      "familyGroup": "Sinkovicz Guild",
+      "passhash": "$2b$10$/HOu61fJ/luq8dZTh62WxePE.KtEJSRLD2KK9C4Ajtm4.fSDmVzWS",
+      "drawsId": "b562ec4d-f725-4364-be27-a5794db1c228",
+      "isActive": true,
+      "familyGroupId": "a68c3dd8-bf55-4030-b58b-2d37f5ffbee1"
+    },
+    "whoWasDrawn": {
+      "id": "1510299c-9e72-4024-b13e-34df97023b33",
+      "email": "fannidominika@gmail.com",
+      "firstName": "Fanni",
+      "lastName": "Karkus",
+      "familyGroup": "Balog Alliance",
+      "passhash": "$2b$10$T5RY8NfGKZK9ouRcOGWIFuJ7JTIJ96uVdThUrfJUKg1/gV.GWZvES",
+      "drawsId": "e9aebf3d-a5a6-427e-a60a-de1bc156b4cb",
+      "isActive": true,
+      "familyGroupId": "40e65cfc-e2a1-44cc-89c3-e329d8a2d3e5"
+    },
+    "score": 7
+  },
+  {
+    "whoDrew": {
+      "id": "3a80bbda-9083-40e3-85e1-3d52de4904f8",
+      "email": "palbence92@gmail.com",
+      "firstName": "Bence",
+      "lastName": "Pal",
+      "familyGroup": "Pal Institute",
+      "passhash": "$2b$10$6mdcS3lDoLOCqMBaaeJP2.xueLO9nvSKXMUE1rS6mPXHaE92T1Fg6",
+      "drawsId": "e171d157-40b7-45a2-9cc6-6d8d93713d30",
+      "isActive": true,
+      "familyGroupId": "7b0131c0-0344-4ab0-a6d1-6abe22572bc9"
+    },
+    "whoWasDrawn": {
+      "id": "b562ec4d-f725-4364-be27-a5794db1c228",
+      "email": "bvazsony@gmail.com",
+      "firstName": "Vázsony",
+      "lastName": "Balog",
+      "familyGroup": "Balog Alliance",
+      "passhash": "$2b$10$2BGCETHewX/x/FmeqXQHye7CvXijDVCwN8819LxtfWLvd/V/5pnp2",
+      "drawsId": "8f8f336e-72ea-4696-a5bf-4c359d7594f6",
+      "isActive": true,
+      "familyGroupId": "40e65cfc-e2a1-44cc-89c3-e329d8a2d3e5"
+    },
+    "score": 2
+  },
+  {
+    "whoDrew": {
+      "id": "ff0c7cf2-3646-4ca7-89db-9ec47db7a9b5",
+      "email": "bpeter@appaloosagroup.hu",
+      "firstName": "Péter",
+      "lastName": "Balog",
+      "familyGroup": "Balog Alliance",
+      "passhash": "$2b$10$fh9NrBRIwKB6i9eguEDuP..myn8HAsE5LiTFY./kMXhfLdIYJfIUm",
+      "drawsId": "6608f1d0-b377-46a1-83b8-adc65e16faea",
+      "isActive": true,
+      "familyGroupId": "40e65cfc-e2a1-44cc-89c3-e329d8a2d3e5"
+    },
+    "whoWasDrawn": {
+      "id": "e171d157-40b7-45a2-9cc6-6d8d93713d30",
+      "email": "fulopbence91@gmail.com",
+      "firstName": "Bence",
+      "lastName": "Fulop",
+      "familyGroup": "Sinkovicz Guild",
+      "passhash": "$2b$10$XLO.w.SlfyqHG2Ip9KFgeOru7/48iosx0Cmt86ggDgznbH5KhXsJS",
+      "drawsId": "ff0c7cf2-3646-4ca7-89db-9ec47db7a9b5",
+      "isActive": true,
+      "familyGroupId": "a68c3dd8-bf55-4030-b58b-2d37f5ffbee1"
+    },
+    "score": 3
+  },
+  {
+    "whoDrew": {
+      "id": "25a26a35-76e6-4c29-83c8-08a024d4f980",
+      "email": "csibi48@gmail.com",
+      "firstName": "Csibi",
+      "lastName": "Fejes",
+      "familyGroup": "Fejes Syndicate",
+      "passhash": "$2b$10$O4SKjD5s4IeStkdkysW9GeiiOqFREEAaWmngLL3iiyRGCVchfuvaW",
+      "drawsId": "b809e1ed-f2a9-4a12-926e-9539ee2bf5cd",
+      "isActive": true,
+      "familyGroupId": "80e20aa5-068b-45b4-b9a3-8b96c442c1cc"
+    },
+    "whoWasDrawn": {
+      "id": "918d2539-f8ed-4033-b680-a86bea3dd55a",
+      "email": "oneszke@gmail.com",
+      "firstName": "Barni",
+      "lastName": "Olah",
+      "familyGroup": "Balog Alliance",
+      "passhash": "$2b$10$ekt0zlBKZXvHUIyv/vNP/O.1m0UsZG2zNFtaOKPXrkfv9PyhtBxAS",
+      "drawsId": "89736a07-8743-47d2-a2cb-ef0afa85f03f",
+      "isActive": true,
+      "familyGroupId": "40e65cfc-e2a1-44cc-89c3-e329d8a2d3e5"
+    },
+    "score": 1
+  }
+]

@@ -1,7 +1,10 @@
 import { ProfileEdit } from "@/components/profile/profileClient";
 import { getCurrentUser } from "@/server/userData";
 import { redirect } from "next/navigation";
-
+export const metadata = {
+  title: "Secret Santa - Profile",
+  description: "Profile",
+};
 export default async function Page() {
   let user: Awaited<ReturnType<typeof getCurrentUser>>;
   try {

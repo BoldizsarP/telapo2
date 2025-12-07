@@ -19,7 +19,7 @@ function Reset(): ReactElement {
     </div>
   );
 }
-export default async function Page(): Promise<ReactElement> {
+export default function Page(): ReactElement {
   return (
     <>
       <Suspense>

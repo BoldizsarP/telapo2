@@ -87,6 +87,3 @@ footer {
   font-size: 14px;
   color: #6b6b6b;
 }
-label {
-  @apply text-festive-green;
-}

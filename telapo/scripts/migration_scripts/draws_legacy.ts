@@ -1,5 +1,5 @@
 import prisma from "../../utils/connect";
-import { Migration, MigrationBase } from "./migration_types";
+import { Migration, MigrationBase, runMigration } from "./migration_types";
 
 class MigrateLegacy extends MigrationBase implements Migration {
   migrationName = "migrate_legacy";
@@ -32,13 +32,8 @@ if (require.main === module) {
   async function main() {
     const migrateLegacy = new MigrateLegacy();
     try {
-      await migrateLegacy.run();
-      await migrateLegacy.saveResult(true);
+      await runMigration(migrateLegacy);
     } catch (error) {
-      await migrateLegacy.saveResult(
-        false,
-        error instanceof Error ? error.message : undefined
-      );
       console.error(error);
       process.exit(1);
     }
