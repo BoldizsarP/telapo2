@@ -52,7 +52,6 @@ const getIp = async () => {
     resolve4("smtp.gmail.com", (err, address) => {
       if (err) reject(err);
       resolve(address[0]);
-      console.log(address);
     });
   });
 };

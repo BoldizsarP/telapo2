@@ -36,7 +36,6 @@ async function passwordResetEmail() {
     displayName: user.firstName ?? "Name missing",
     link: getPasswordResetLink(secret),
   });
-  console.log("Password reset email sent to", user.email);
 }
 
 if (require.main === module) {

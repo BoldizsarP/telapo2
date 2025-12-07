@@ -37,7 +37,6 @@ export const getDrewUserWishlist = async () => {
       },
     },
   });
-  console.log(user);
   return user.latestDrew?.whoWasDrawn?.wishlists?.data;
 };
 

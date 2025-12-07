@@ -12,7 +12,6 @@ async function main() {
   await prisma.$disconnect();
   for (const draw of draws) {
     const doit = readlineSync.question(`Send email to ${draw.email}`);
-    console.log(doit);
     const trans = await getMailer();
     if (doit.toLowerCase() === "y" && draw.draws) {
       await sendDrawEmail({

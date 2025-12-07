@@ -51,17 +51,14 @@ export async function resetPassword(
   prevState: Response | null,
   data: FormData
 ): Promise<Response> {
-  console.log(data);
   const psw = data.get("psw");
   const psw_confirm = data.get("psw_confirm");
   if (!psw || !psw_confirm || psw != psw_confirm || typeof psw != "string") {
-    console.log("error", psw, psw_confirm, psw != psw_confirm, typeof psw);
     return { field_error: "Passwords don't match" };
   }
   const resetEntry = await prisma.pWResetToken.findUnique({
     where: { secret },
   });
-  console.log(resetEntry);
   if (!resetEntry) return { global_error: "secret missing" };
   await prisma.pWResetToken.delete({ where: { secret } });
   await prisma.user.update({

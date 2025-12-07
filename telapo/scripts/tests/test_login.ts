@@ -9,8 +9,6 @@ async function main() {
   const user = await prisma.user.findFirstOrThrow({
     where: { email: "boldizsarpal@invenshure.com" },
   });
-  console.log(user);
-  console.log(await compare("123", user.passhash));
   if (await compare("123", user.passhash)) {
     console.log("Password is correct");
   } else {

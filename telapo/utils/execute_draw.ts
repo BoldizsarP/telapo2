@@ -171,7 +171,7 @@ function analyzeFamilyGroupDraws(draws: Draw[]) {
       ratios.push(`${targetFamilyGroupId}: ${ratio} (${count}/${totalDraws})`);
     }
 
-    console.log(
+    console.info(
       `Family Group ${familyGroupId}: ` +
         `Drew ${uniqueFamilyGroupsCount} different family groups. ` +
         `Ratios: ${ratios.join(", ")}`

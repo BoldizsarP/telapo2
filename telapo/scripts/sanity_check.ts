@@ -20,7 +20,6 @@ async function main() {
   } catch (error) {
     throw Error("Some users have not been drawn");
   }
-  console.log("Validated ", users.length);
 }
 main()
   .then(async () => {
